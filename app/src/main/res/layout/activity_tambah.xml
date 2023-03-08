@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context=".TambahActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/untuktextbox"
+        ></pl.droidsonroids.gif.GifImageView>
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data Player ~"
+        android:textSize="21sp"
+        android:textColor="@color/white"
+       android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+     ></TextView>
+
+
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Player"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/tv_judul"
+        android:textColorHint="@color/white"
+        android:textSize="21sp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/et_nomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:hint="Nomor Punggung"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/et_nama"
+        android:textSize="21sp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/et_klub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Klub"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/et_nomor"
+        android:textSize="21sp"
+        ></EditText>
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/et_klub"
+        android:text="Simpan :3"
+        android:textSize="21sp"
+        ></Button>
+
+
+</RelativeLayout>
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_nama"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Nama Player"-->
+<!--            android:background="@color/white"-->
+<!--            android:inputType="text"-->
+<!--            />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_nomor"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Nomor Punggung"-->
+<!--            android:background="@color/white"-->
+<!--            android:inputType="number"-->
+<!--            />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        13-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_klub"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Klub Player"-->
+<!--            android:background="@color/white"-->
+<!--            android:inputType="text"-->
+<!--            />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <Button-->
+<!--        android:id="@+id/btn_tambah"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="TAMBAH DATA"/>-->
+
