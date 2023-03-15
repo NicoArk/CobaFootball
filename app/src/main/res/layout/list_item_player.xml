@@ -6,47 +6,48 @@
     android:elevation="32dp">
 
     <LinearLayout
-        android:id="@+id/ll_player"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="6dp"
-        android:orientation="vertical"
-        android:background="@drawable/untuktextbox">
-
+        android:background="@drawable/grey"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Id"
+            android:text="ID"
+            android:textSize="21sp"
             android:visibility="gone"
-            />
+            android:textStyle="italic"/>
 
         <TextView
             android:id="@+id/tv_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Pemain"
-            android:textColor="@color/white"
             android:textSize="21sp"
             android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_nomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Punggung"
+            android:textSize="21sp" />
 
         <TextView
             android:id="@+id/tv_klub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Klub"
-            android:textColor="@color/white"
             android:textSize="21sp" />
 
-        <TextView
-            android:id="@+id/tv_nomor"
+        <pl.droidsonroids.gif.GifImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="No Punggung"
-            android:textSize="21sp" />
-
+            android:background="@drawable/star"
+            ></pl.droidsonroids.gif.GifImageView>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
