@@ -2,6 +2,7 @@ package com.ahmfarisi.footballplayer;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,7 +68,12 @@ public class AdapterFootballPlayer extends RecyclerView.Adapter<AdapterFootballP
             pesan.setPositiveButton("Ubah", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-
+                    Intent varIntent = new Intent(ctx, UbahActivity.class);
+                    varIntent.putExtra("varId", tvID.getText().toString());
+                    varIntent.putExtra("varNama", tvNama.getText().toString());
+                    varIntent.putExtra("varNomor", tvNomor.getText().toString());
+                    varIntent.putExtra("varKlub", tvKlub.getText().toString());
+                    ctx.startActivity(varIntent);
                 }
             });
             pesan.setNegativeButton("Hapus", new DialogInterface.OnClickListener() {

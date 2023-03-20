@@ -9,11 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="6dp"
-        android:background="@drawable/grey"
+android:background="@color/purple_200"
+
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_id"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ID"
@@ -23,6 +25,7 @@
 
         <TextView
             android:id="@+id/tv_nama"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama Pemain"
@@ -31,6 +34,7 @@
 
         <TextView
             android:id="@+id/tv_nomor"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nomor Punggung"
@@ -38,16 +42,17 @@
 
         <TextView
             android:id="@+id/tv_klub"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Klub"
             android:textSize="21sp" />
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/star"
-            ></pl.droidsonroids.gif.GifImageView>
+<!--        <pl.droidsonroids.gif.GifImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/star"-->
+<!--            ></pl.droidsonroids.gif.GifImageView>-->
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
